@@ -1,0 +1,39 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color:black;
+}
+
+header a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.right{
+    position: relative;
+    top:50%;
+    float: right;
+}
+
+main{
+    position: relative;
+    clear: both;
+    padding-top: 130px;
+}
+
+#logo {
+    margin:auto;
+    background-size: 272px 92px;
+    width: 272px;
+    height: 92;
+}
+
+#search-box-all {
+    margin-top: 25px;
+    
+}
