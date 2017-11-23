@@ -7,7 +7,14 @@ body {
 }
 
 a {
-    color:black;
+  display: inline;
+  outline: none;
+  color: #595959;
+  text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header a {
@@ -15,11 +22,29 @@ header a {
     vertical-align: middle;
     margin-right: 10px;
 }
+
 .right {
     position: relative;
     top:50%;
     float: right;
 }
+
+#apps {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#apps a{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    background: url(http://www.englewoodschools.net/sites/default/files/archive/images/GoogleAppsIcon.png);
+    background-position: -1px -1px;
+    opacity: .55;
+}
+
+
 
 
 /*Partea de Mijloc*/
@@ -27,6 +52,9 @@ main {
     position: relative;
     clear: both;
     padding-top: 130px;
+    text-align: center;
+    
+    
 }
 
 #logo {
@@ -37,21 +65,30 @@ main {
 }
 
 #search-box-all {
-    margin-top: 25px;  
+    margin-top: 25px; 
+    
 }
 
 #search-box {
-    width: 584px;
-    height: 44px;
-    border: solid 1px;
-    border-radius: 3px;
-    box-shadow: 0px 2px 1px 0px rgba(1,1,0,.15);
+    width:575px;
+    height:42px;
+    box-sizing:border-box;
+    margin-bottom: 3%;
+    border: 1px solid #e8e8e8;
+    border-radius:2px;
+    box-shadow: 1px 2px 7px #e4e4e4;
     
+    
+}
+
+#search-box:hover {
+    box-shadow: 2px 3px 5px #c7c7c7;
 }
 
 form {
     display: inline-block;
     padding: 4px 0 0 15px;
+    align-content: center;
 }
 
 form input {
@@ -79,43 +116,41 @@ form input {
     text-align: center;
 }
 
-#romana {
+#search-buttons > input {
+    margin-right: 5px;
+    padding: 10px 15px;
+    border: 1px solid #f5f5f5;
+    border-radius: 3px;
+    background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+    color: #757575;
+    font-family: 'Arial';
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#search-buttons > input:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+.limbi {
     text-align: center;
-    margin-top: 25px;
+    font-size: 13px;
+    font-family: 'Arial';
 }
 
-#romana-link {
-  color: blue;
+.limbi a:hover{
+    text-decoration: underline;
+    color: blue;
 }
 
-#romana-link:hover {
-  text-decoration: underline;
+.limbi a:active {
+    color: blue;
 }
 
-#magyar {
-    text-align: center;
-    margin-top: 25px;
-}
-
-#magyar-link {
-  color: blue;
-}
-
-#magyar-link:hover {
-  text-decoration: underline;
-}
-
-#deutsch {
-    text-align: center;
-    margin-top: 25px;
-}
-
-#deutsch-link {
-  color: blue;
-}
-
-#deutsch-link:hover {
-  text-decoration: underline;
+.limbi a:visited {
+    color: blue;
 }
 
 
@@ -147,4 +182,17 @@ footer {
 #right-down {
     float: right;
     border-top: 0;
+}
+#left-down > a, #right-down > a {
+  display: inline-block;
+    font-size: 13px;
+    color: rgba(0,0,0.54);
+}
+
+#left-down > a:hover, #bottom-right > a{
+    text-decoration: underline;
+}
+
+.bottom-link-padding {
+    padding-left: 30px;
 }
