@@ -77,6 +77,8 @@ main {
     border: 1px solid #e8e8e8;
     border-radius:2px;
     box-shadow: 1px 2px 7px #e4e4e4;
+    position: relative;
+    left: 500px;
     
     
 }
@@ -138,8 +140,12 @@ form input {
     text-align: center;
     font-size: 13px;
     font-family: 'Arial';
+    
 }
 
+.limbi a {
+    color: blue;
+}
 .limbi a:hover{
     text-decoration: underline;
     color: blue;
@@ -185,8 +191,9 @@ footer {
 }
 #left-down > a, #right-down > a {
   display: inline-block;
-    font-size: 13px;
-    color: rgba(0,0,0.54);
+  font-size: 13px;
+  color: rgba(0,0,0.54);
+
 }
 
 #left-down > a:hover, #bottom-right > a{
