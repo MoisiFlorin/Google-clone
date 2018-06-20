@@ -1,4 +1,5 @@
 /* Partea de Sus*/
+
 body {
     font-family: "Arial", sans-serif;
     margin: 0;
@@ -7,14 +8,22 @@ body {
 }
 
 a {
-  display: inline;
-  outline: none;
-  color: #595959;
-  text-decoration: none;
+    display: inline;
+    outline: none;
+    color: #595959;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
 }
 
 a:hover {
     text-decoration: underline;
+    opacity: .80
+}
+
+header{
+    margin-top: 15px
 }
 
 header a {
@@ -26,7 +35,7 @@ header a {
 
 .right {
     position: relative;
-    top:50%;
+    top: 50%;
     float: right;
 }
 
@@ -36,63 +45,74 @@ header a {
     padding: 0;
 }
 
-#apps a{
+#apps a {
     height: 30px;
     width: 30px;
     background-color: black;
     background: url(Icons/GoogleAppsIcon.png);
     background-position: -1px -1px;
-    opacity: .55;
+    opacity: .6;
+}
+
+#apps a:hover {
+    opacity: 1.0;
+}
+
+.btn {
+    display: inline;
+    padding: 8px 15px;
+    margin-right: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #4684EF;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn:hover{
+     box-shadow: 0px 1px 0px #c7c7c7;
 }
 
 #sign-in {
     display: inline;
     margin: 10px;
-    padding: ;
 }
 
-#sign-in a{
-    background: url(Icons/sign_in_button-resize.png);
-    height: 44px;
-    width: 100px
-}
 
 
 
 /*Partea de Mijloc*/
+
 main {
     position: relative;
     clear: both;
-    padding-top: 130px;
+    padding-top: 150px;
     text-align: center;
-    
-    
 }
 
-#logo {
-    margin: 0 auto;
-    background-size: 272px 92px;
+.logo {
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 272px;
     height: 92px;
 }
 
 #search-box-all {
-    margin-top: 25px; 
-    
+    margin-top: 25px;
+
 }
 
 #search-box {
-    width:575px;
-    height:42px;
-    box-sizing:border-box;
+    width: 575px;
+    height: 42px;
+    box-sizing: border-box;
     margin-bottom: 3%;
     border: 1px solid #e8e8e8;
-    border-radius:2px;
+    border-radius: 2px;
     box-shadow: 1px 2px 7px #e4e4e4;
     position: relative;
     margin: 0 auto;
-    
-    
 }
 
 #search-box:hover {
@@ -135,7 +155,7 @@ form input {
     padding: 10px 15px;
     border: 1px solid #f5f5f5;
     border-radius: 3px;
-    background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-color: #f2f2f2;
     color: #757575;
     font-family: 'Arial';
     font-size: 13px;
@@ -144,7 +164,7 @@ form input {
 
 #search-buttons > input:hover {
     border: 1px solid #c6c6c6;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     color: #222;
 }
 
@@ -152,13 +172,14 @@ form input {
     text-align: center;
     font-size: 13px;
     font-family: 'Arial';
-    
+
 }
 
 .limbi a {
     color: blue;
 }
-.limbi a:hover{
+
+.limbi a:hover {
     text-decoration: underline;
     color: blue;
 }
@@ -173,6 +194,7 @@ form input {
 
 
 /*Partea de Jos*/
+
 footer {
     position: absolute;
     bottom: 0;
@@ -181,45 +203,54 @@ footer {
 }
 
 #country {
+    padding-left: 40px;
+    max-height: 40px;
     font-size: 15px;
-    color: rgba(0,0,0, .52);
-    margin-left: 40px;
+    color: rgba(0, 0, 0, .52);
 }
 
-#country, #left-down, #right-down {
-  padding: 10px 35px 10px 35px;
-  border: 1px solid #e4e4e4;
-  border-left: 0;
-  border-right: 0;
+#country,
+#left-down,
+#right-down {
+    padding-bottom: 10px;
+    border: 1px solid #e4e4e4;
+    border-left: 0;
+    border-right: 0;
 }
 
 #left-down {
     float: left;
     border-top: 0;
 }
+
 #left-down a {
-   width: 40px; 
-   margin-left: 40px;
+    width: 40px;
+    margin-left: 40px;
 }
 
 #right-down {
+    padding-right: 20px;
     float: right;
     border-top: 0;
 }
 
-#right-down a{
+#right-down a {
     margin-left: 40px;
 }
 
-#left-down > a, #right-down > a {
-  display: inline-block;
-  font-size: 13px;
-  color: rgba(0,0,0.54);
+#left-down > a,
+#right-down > a {
+    display: inline-block;
+    font-size: 13px;
+    color: #666666;
+    font-weight: 400;
 
 }
 
-#left-down > a:hover, #bottom-right > a{
+#left-down > a:hover,
+#bottom-right > a {
     text-decoration: underline;
+    color: #666666;
 }
 
 .bottom-link-padding {
